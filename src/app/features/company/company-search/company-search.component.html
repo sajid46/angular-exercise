@@ -1,0 +1,14 @@
+<div class="container m-5">
+  <div [hidden]="showCompanyList" class="searchBox">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+      <div class="flex-container">
+        <input
+          class="item form-control"
+          placeholder="Search by Company Name or Number"
+          formControlName="company"
+        />
+        <button type="submit" class="btn btn-info item">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

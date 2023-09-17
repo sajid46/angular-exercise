@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div [hidden]="IsCompanyNameSelected == true">
+    <app-company-search
+      [hidden]="hideCompaniesFiltered == false"
+      (companyEvent)="receiveSearchCompanyName($event)"
+    ></app-company-search>
+    <app-company-lists
+      [hidden]="hideCompaniesFiltered == true"
+      [companies$]="companies$"
+      (companyNameEvent)="receiveSelectedCompanyNameName($event)"
+    ></app-company-lists>
+  </div>
+  <app-company-details
+    [hidden]="IsCompanyNameSelected == false"
+  ></app-company-details>
+</div>

@@ -1,0 +1,26 @@
+.search {
+  height: 80px;
+  width: 350px;
+  padding: 0px 10px;
+  margin: 10px;
+}
+
+.searchButton {
+  padding: 28px !important;
+}
+
+table {
+  th {
+    padding: 30px 10px;
+  }
+
+  td {
+    width: 10px !important;
+    padding: 20px;
+    border: none;
+
+    label {
+      font-weight: bold;
+    }
+  }
+}
